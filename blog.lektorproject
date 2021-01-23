@@ -1,15 +1,15 @@
 [project]
-name = Jökull Sólberg
-locale = is_IS
-url = http://www.solberg.is/
+name = Callum Abbott
+locale = en_UK
+url = http://www.callum.co.uk/
 
 [servers.production]
 name = Production
 enabled = yes
 default = yes
-target = ghpages://jokull/jokull.github.io?cname=www.solberg.is
+target = ghpages://c-abbott/jokull.github.io?cname=www.callum.co.uk
 
 [feed]
-name = Jökull Sólberg
+name = Callum Abbott
 source_path = /
 url_path = /feed.xml
