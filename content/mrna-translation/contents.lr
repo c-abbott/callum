@@ -1,0 +1,15 @@
+title: mrna translation
+---
+hero_image:
+---
+pub_date: 2021-01-23
+---
+body: 
+
+
+## preface
+In my final year as an undergraduate theoretical physics student, the COVID-19 pandemic hit thick and fast. I vacated my student flat - with regret I should add, since Edinburgh is truly an incredible city - and headed off to Luxembourg to ride this whole thing out for a month with my girlfriend and her family. One month turned to two, two to three, and I leave the rest of this story as an exercise to the reader.
+
+Prior to my departure, I was working on my undergraduate disseration with [Dr Juraj Szavits-Nossan](https://www2.ph.ed.ac.uk/~jszavits/) on mathematically modelling the process of mRNA translation; a.k.a finding equations which describe how proteins are made. The usual reaction I get when I tell people the topic of my undergradute research is "*that doesn't sound very physics-ey?*" which I think is fair. However, physics is a subject which encompasses [all possible time and length scales](https://www.ligo.caltech.edu/page/what-is-ligo), so it is inevitable that people who spend their living days studying the subject will find it wherever they want it to be.
+
+## building a model
