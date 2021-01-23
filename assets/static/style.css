@@ -1,6 +1,6 @@
 :root {
-  --green: #A2E0A2;
-  --hard-green: #7EE17D;
+  --deepblue: #150baa;
+  --orange: #F95700FF;
 }
 
 body {
@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  color: var(--hard-green);
+  color: var(--deepblue);
 }
 
 header, footer {
@@ -60,7 +60,7 @@ header h1 {
 
 header h1 a {
   color: black;
-  border-bottom: 4px solid var(--green);
+  border-bottom: 4px solid var(--deepblue);
 }
 
 header .social {
@@ -74,7 +74,7 @@ header .social a {
 }
 
 header .social a svg:hover path {
-  fill: var(--green);
+  fill: var(--orange);
 }
 
 header .social svg {
@@ -178,7 +178,7 @@ div.page {
     text-align: center;
   }
   .intro .bio p {
-    font-size: 9pt;
+    font-size: 8pt;
   }
   .intro .picture img {
     width: 60%;
@@ -186,12 +186,12 @@ div.page {
 }
 
 .intro img {
-  width: 100%;
-  border-radius: 100000px;
+  width: 105%;
+  border-radius: 10000px;
 }
 
 .intro a {
-  color: var(--hard-green);
+  color: var(--orange);
 }
 
 .index-posts {
