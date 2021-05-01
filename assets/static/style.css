@@ -35,7 +35,7 @@ body {
 }
 
 a {
-  color: #111;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ a:hover {
 header, footer {
   margin: 0 auto;
   padding: 20px 1em;
-  color: rgba(0,0,0,.84);
+  color: rgba(0, 0, 0, 0.84);
 }
 
 header {
@@ -56,12 +56,12 @@ header {
 header h1 {
   margin: 0;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 header h1 a {
-  color: black;
-  border-bottom: 4px solid var(--deepblue);
+  color: rgb(0, 0, 0);
+  /*border-bottom: 4px solid var(--deepblue);*/
 }
 
 header .social {
@@ -146,7 +146,7 @@ div.page {
 }
 
 .blog-post-body a {
- text-decoration: underline;
+ text-decoration: none;
 }
 
 .intro { 
@@ -193,6 +193,7 @@ div.page {
 
 .intro a {
   color: var(--deepblue);
+  font-weight: bold;
 }
 
 .index-posts {

@@ -1,14 +1,13 @@
 [project]
 name = Callum Abbott
 locale = en_UK
-url = http://www.callum.co.uk/
+url = http://www.callum.online/
 
 [servers.production]
 name = Production
 enabled = yes
 default = yes
-target = ghpages://c-abbott/jokull.github.io?cname=www.callum.co.uk
-
+target = ghpages://c-abbott/jokull.github.io?cname=www.callum.online
 [feed]
 name = Callum Abbott
 source_path = /
