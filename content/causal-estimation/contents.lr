@@ -1,0 +1,25 @@
+title: Causal Estimation
+---
+hero_image:
+---
+pub_date: 2021-05-14
+---
+body:
+
+In this blog post, I will be detailing various estimation methods commonly untilised in the field of causal inference.
+
+### The Causal Workflow
+The workflow of causal inference always begins with a question: 
++ *How effective is a new drug?*
++ *Did the new tax policy improve wealth inequality, or exacerbate it?*
++ *Which of these thumbnails generates the highest click-through-rate (CTR) on our new YouTube video?*
+
+By nature, human beings ask these kinds of causal questions on a day-to-day basis, with even small children capable of grasping the concept of causation at a very early age. You may be surprised to hear then that to answer these questions rigorously, the classical framework of statistics is insufficient. For instance, if one thinks of statistics, and mathematics in general, analgous to how one thinks of language, then the vocabulary of statistics simply has no words to describe causation; only association. I won't be proving this bold claim here, but if you aren't satisfied, then I suggest scrolling around on **<a href="https://twitter.com/yudapearl">Judea Pearl's Twitter</a>** for more than 5 minutes; he's been shouting about this stuff since the late 80s.
+
+Returning back to the topic at hand, the framework of causal inference builds on classical statistics to directly answer causal questions. First, we must succinctly convert our causal question into a *causal estimand*. Once this quanitity has been *identified*, converting it from a causal into a *statistical estimand*, then one can obtain a real-valued *estimate* of this quantity through the process of *estimation*. This workflow has been neatly illustrated by Brady Neal below. Obtaining this estimate is the overall goal of causal inference, since once it is in your possession, you now have a single number which quantifies the causal relationship of interest.
+<div class="caption">
+  <img src="./causal-flowchart.png" class="shadow-img">
+  <p>Source: <a href="https://www.bradyneal.com/causal-inference-course"> Brady Neal's causal inference course.</a></p>
+</div>
+
+### Average Treatment Effects
