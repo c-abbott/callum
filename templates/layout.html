@@ -9,6 +9,22 @@
 <title>{% block title %}Welcome{% endblock %} — callum</title>
 <body>
   <header>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$','$'],['\\(','\\)'] ],
+    displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+    processEscapes: true,
+    processRefs: true,
+    packages: ['base', 'ams']
+  },
+  options: {
+   ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+</script>
     <style>
       a:link {
         color:  #000000; 
