@@ -2,7 +2,7 @@ title: Causal Estimation
 ---
 hero_image:
 ---
-pub_date: 2021-05-14
+pub_date: 2021-05-18
 ---
 body:
 
@@ -23,17 +23,29 @@ Returning back to the topic at hand, the framework of causal inference builds on
 </div>
 
 ### Potential Outcomes and Treatment Effects
-Before delving into concrete causal estimation techniques, we must first become familiar with the notion of **potential outcomes**. Imagine we are a leading public economists interested in increasing the quality of life for the citizens of our nation. One way of quantifying a citizen's quality of life would be to examine their median household income adjusted for the cost of living in their location[^1]. Our goal is to hence implement a new publicy policy (a **treatment**, $T$) such that its causal effect increases the median househole income in our nation (an **outcome**, $Y$). Suppose we conjured up, as well as rolled out this magical policy throughout our nation, and we now want to assess whether we attained our intended goal. We can subsequently map this assessment into the causal question of *"Did the new public policy improve the quality of life for our citizens?* returning us to the first stage of the [Causal Workflow](#causalworkflow).
+Before delving into concrete causal estimation techniques, we must first become familiar with the notion of potential outcomes. Imagine we are a leading public economists interested in increasing the quality of life for the citizens of our nation. One way of quantifying a citizen's quality of life would be to examine their median household income adjusted for the cost of living in their location[^1]. Our goal is to hence implement a new publicy policy (a interventional treatment, $T$) such that its causal effect increases the median household income in our nation (an outcome $Y$). Suppose we conjured up, as well as rolled out this magical policy throughout our nation, and we now want to assess whether we attained our intended goal. We can subsequently map this assessment into the causal question of *"Did the new public policy improve the quality of life for our citizens?"* returning us to the first stage of the [**Causal Workflow**](#causalworkflow).
 
 As devout followers of the Causal Workflow, we proceed in our assessment by converting our causal question of interest into a causal estimand like so:
 
-$$Y |{\text{do}(T=1)} - Y |{\text{do}(T=0)} \triangleq Y(1) - Y(0)$$
+$$\text{Treatment/Causal Effect} = Y |{\text{do}(T=1)} - Y |{\text{do}(T=0)} \triangleq Y(1) - Y(0)$$
 Where:
 - $\triangleq$ denotes an equality by definition
-- $\text{do}(T=t) \; \forall \; t = 0, 1$ denotes the assignment of treatment irrespective of any other factors
+- $\text{do}(T=t) \; \forall \; t = 0, 1$ denotes the intervention of treatment irrespective of any other factors
 - $T$ denotes the treatment e.g. the new public policy
 - $Y$ denotes the outcome e.g. the change in the median household income
-- $Y(t)$ denotes the **potential outcome** given that the treatment was assigned (t=1) or
+- $Y(t)$ denotes the potential outcome given the treatment was assigned $t=1$, or not $t=0$
+
+However, keen readers may notice a problem with our formulation in that we only ever have access to $Y(1)$ or $Y(0)$, but never both; this is known as the **<a href="https://chabefer.github.io/STCI/FPCI.html"> Fundamental Problem of Causal Inference</a>**. Succinctly put, either the policy was implemented and we observe $Y(1)$, or it wasn't and we observe $Y(0)$, you can't have both. 
+
+In the context of our economists example, a blanket rollout of our new policy would make the causal effect impossible to compute since we would only have observed the factual quantity $Y(1)$, and not the counterfactual quantity, $Y(0)$ by definition. I should note here that people often like to reason about counterfactual quantities by considering an alternative, hypothetical universe in which the denoted event occured i.e. a universe in which the policy was not implemented. I think Ken Acquah illustrates this nicely in the figure depicted below where he considers the effect of attending grad school versus going directly into an industry job on his income. Given that we have no access to this hypothetical universe, how are we supposed to make progress from here?
+
+<div class="caption">
+  <img src="./counterfactuals.png" class="shadow-img">
+  <p>Source: <a href="https://www.causalflows.com/potential-outcomes-model/"> Ken Acquah's causal flows blog.</a></p>
+</div>
+
+### RCTs and ATEs
+
 
 
 
