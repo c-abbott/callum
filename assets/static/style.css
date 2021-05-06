@@ -119,6 +119,27 @@ div.page {
 
 .blog-post img {
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 45%;
+  padding: 5px;
+}
+.column { margin: 2em 0 1em; }
+
+.column { font-size: x-small; text-align: right; color: rgba(0,0,0,0.4); }
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .blog-post img.right {
