@@ -268,7 +268,7 @@ div.page {
 
 .caption p { font-size: x-small; text-align: right; color: rgba(0,0,0,0.4); }
 
-.shadow-img { box-shadow: 0 0 20px rgba(0,0,0,0.2); }
+/* .shadow-img { box-shadow: 0 0 20px rgba(0,0,0,0.2); } */
 
 table { 
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
