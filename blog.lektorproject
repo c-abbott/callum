@@ -7,7 +7,7 @@ url = http://www.callum.online/
 name = Production
 enabled = yes
 default = yes
-target = ghpages://c-abbott/jokull.github.io?cname=www.callum.online
+target = ghpages://c-abbott/callum?cname=www.callum.online
 [feed]
 name = Callum Abbott
 source_path = /
